@@ -1,0 +1,13 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    background:url("../images/bg-desktop.png");
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Raleway";
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
