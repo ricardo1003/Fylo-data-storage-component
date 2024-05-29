@@ -74,6 +74,7 @@ article section{
     background-position: center;
 }
 .storage{
+    position: relative;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -130,7 +131,32 @@ article section{
     display: flex;
     justify-content: space-between;
 }
-
+.storage :nth-child(3){
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.storage :nth-child(3) p{
+    position: absolute;
+    padding: .5rem 2rem;
+    top: -1em;
+    border-radius: 10px;
+    background-color: white;
+    color: hsl(229, 57%, 11%);
+    font-size: 3em;
+    font-weight: 700;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+align-items: center;
+}
+.storage :nth-child(3) p span{
+    margin-left: 10px;
+    color: hsl(229, 7%, 55%);
+    font-size: 14px;
+}
 
 .attribution{width: 100%; position: absolute; bottom: 0; font-size: 11px; text-align: center;}
 .attribution a { color: hsl(228, 45%, 44%); }
