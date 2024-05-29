@@ -20,7 +20,9 @@ main{
     align-items: center;
 }
 article{
-    /* max-width: max-content; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
 }
 article section{
     margin-bottom: 2rem;
@@ -28,6 +30,8 @@ article section{
     background-color: hsl(228, 56%, 26%);
 }
 .logo{
+    margin-right: 1rem;
+    padding-right: 8rem;
     border-radius: 10px 90px 10px 10px;
     display: flex;
     flex-direction: column;
@@ -75,12 +79,18 @@ article section{
 }
 .storage{
     position: relative;
+    height: 6rem;
+    width: 30em;
+    padding: 1rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     text-align: center;
+}
+.storage p{
+    text-align: start;
 }
 .storage p span{
     color: hsl(243, 100%, 93%);
@@ -139,6 +149,43 @@ article section{
 .storage :nth-child(3) p{
     position: absolute;
     padding: .5rem 2rem;
+    top: -13rem; right: 0;
+    border-radius: 10px;
+    background-color: white;
+    color: hsl(229, 57%, 11%);
+    font-size: 3em;
+    font-weight: 700;
+    -webkit-border-radius: 10px 10px 0 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+align-items: center;
+}
+.storage :nth-child(3) p::after{
+    content: "";
+    display:inline-block;
+    width: 1rem;
+    height:1rem;
+    bottom: -1rem; right: 0;
+    background-color: white;
+    position: absolute;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.storage :nth-child(3) p span{
+    margin-left: 10px;
+    color: hsl(229, 7%, 55%);
+    font-size: 14px;
+}
+
+/* .storage :nth-child(3){
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.storage :nth-child(3) p{
+    position: absolute;
+    padding: .5rem 2rem;
     top: -1em;
     border-radius: 10px;
     background-color: white;
@@ -156,7 +203,13 @@ align-items: center;
     margin-left: 10px;
     color: hsl(229, 7%, 55%);
     font-size: 14px;
-}
+} */
+
+
+
+
+
+
 
 .attribution{width: 100%; position: absolute; bottom: 0; font-size: 11px; text-align: center;}
 .attribution a { color: hsl(228, 45%, 44%); }
