@@ -1,13 +1,80 @@
 body{
+    
     min-height: 100vh;
     margin: 0;
     background:url("../images/bg-desktop.png");
-    background-position: center ;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Raleway";
+    font-size: 14px;
+}
+
+main{
+    height: 100vh;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    /* max-width: max-content; */
+}
+article section{
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: hsl(228, 56%, 26%);
+}
+.logo{
+    border-radius: 10px 90px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    -webkit-border-radius: 10px 90px 10px 10px;
+    -moz-border-radius: 10px 90px 10px 10px;
+    -ms-border-radius: 10px 90px 10px 10px;
+    -o-border-radius: 10px 90px 10px 10px;
+}
+.logo nav{
+    margin-top: 2rem;
+    max-width: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo nav a{
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+.logo nav a button{
+    border-radius: 5px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    padding: 5px;
+    border: none;
+    background-color: hsl(229, 57%, 11%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.logo nav > :first-child button{
+    background: hsl(229, 57%, 11%) url("../images/icon-document.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo nav > :nth-child(2) button{
+    background: hsl(229, 57%, 11%) url("../images/icon-folder.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo nav > :nth-child(3) button{
+    background: hsl(229, 57%, 11%) url("../images/icon-upload.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
+
+
+.attribution{width: 100%; position: absolute; bottom: 0; font-size: 11px; text-align: center;}
 .attribution a { color: hsl(228, 45%, 44%); }
