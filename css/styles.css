@@ -1,10 +1,10 @@
 body{
+    display: block;
     min-height: 100vh;
     margin: 0;
     background:url("../images/bg-desktop.png");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     font-family: "Raleway";
     font-size: 14px;
     color: hsl(229, 7%, 55%);
@@ -19,6 +19,7 @@ main{
     align-items: center;
 }
 article{
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     align-items: end;
@@ -27,10 +28,10 @@ article section{
     margin-bottom: 2rem;
     padding: 2rem;
     background-color: hsl(228, 56%, 26%);
+    box-shadow: 0 10px 20px hsl(229, 57%, 11%);
 }
 .logo{
     margin-right: 1rem;
-    padding-right: 8rem;
     border-radius: 10px 90px 10px 10px;
     display: flex;
     flex-direction: column;
@@ -39,9 +40,12 @@ article section{
     -ms-border-radius: 10px 90px 10px 10px;
     -o-border-radius: 10px 90px 10px 10px;
 }
+.logo picture{
+    margin-right: 6rem;
+}
 .logo nav{
     margin-top: 2rem;
-    max-width: 10rem;
+    width: 10rem;
     display: flex;
     justify-content: space-between;
 }
@@ -77,9 +81,9 @@ article section{
     background-position: center;
 }
 .storage{
+    width: 30em;
     position: relative;
     height: 6rem;
-    width: 30em;
     padding: 1rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -88,7 +92,7 @@ article section{
     -o-border-radius: 10px;
     text-align: center;
 }
-.storage p{
+.storage> p{
     text-align: start;
 }
 .storage p span{
