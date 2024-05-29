@@ -82,10 +82,10 @@ article section{
     background-position: center;
 }
 .storage{
-    width: 30em;
+    min-width: 10rem;
+    width: 30vw;
     position: relative;
     height: 6rem;
-    /* padding: 1rem; */
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -94,7 +94,7 @@ article section{
     text-align: center;
 }
 .storage> p{
-    /* margin-top: 0; */
+    /* width: calc(100% + 50px); */
     text-align: start;
 }
 .storage p span{
@@ -182,7 +182,7 @@ article section{
     color: hsl(229, 7%, 55%);
     font-size: 14px;
 }
-@media only screen and (max-width:843px) {
+@media only screen and (max-width:757px) {
     body{
         background-size: cover;
     }
