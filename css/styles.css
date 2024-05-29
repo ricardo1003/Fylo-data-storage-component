@@ -2,9 +2,10 @@ body{
     display: block;
     min-height: 100vh;
     margin: 0;
-    background:url("../images/bg-desktop.png");
-    background-position: center;
-    background-size: cover;
+    background: hsl(229, 57%, 11%) url("../images/bg-desktop.png");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
     font-family: "Raleway";
     font-size: 14px;
     color: hsl(229, 7%, 55%);
@@ -84,7 +85,7 @@ article section{
     width: 30em;
     position: relative;
     height: 6rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -93,6 +94,7 @@ article section{
     text-align: center;
 }
 .storage> p{
+    /* margin-top: 0; */
     text-align: start;
 }
 .storage p span{
@@ -180,7 +182,10 @@ article section{
     color: hsl(229, 7%, 55%);
     font-size: 14px;
 }
-@media only screen and (max-width:811px) {
+@media only screen and (max-width:843px) {
+    body{
+        background-size: cover;
+    }
     article{
         text-align: center;
         display: block;
